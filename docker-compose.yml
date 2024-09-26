@@ -1,6 +1,6 @@
 services:
   nginx:
-    image: nginx:1.27.0
+    image: nginx:1.26.2
     ports:
       - "8080:80"
     networks:
@@ -18,7 +18,7 @@ services:
       - ./php/docker-php.ini:/usr/local/etc/php/conf.d/docker-php.ini
       - ./www/html/:/var/www/html/
   mariadb:
-    image: mariadb:11.4.2
+    image: mariadb:11.5.2
     environment:
       MARIADB_ALLOW_EMPTY_ROOT_PASSWORD: 1
     networks:
