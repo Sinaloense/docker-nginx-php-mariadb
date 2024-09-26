@@ -15,6 +15,7 @@ services:
     networks:
       - internal
     volumes:
+      - ./php/docker-php.ini:/usr/local/etc/php/conf.d/docker-php.ini
       - ./www/html/:/var/www/html/
   mariadb:
     image: mariadb:11.4.2
