@@ -2,7 +2,7 @@ services:
   nginx:
     image: nginx:1.26.2
     environment:
-      TZ: America/Mazatlan
+      TZ: UTC
     ports:
       - "8080:80"
     networks:
@@ -22,7 +22,7 @@ services:
   mariadb:
     image: mariadb:11.5.2
     environment:
-      TZ: America/Mazatlan
+      TZ: UTC
       MARIADB_ALLOW_EMPTY_ROOT_PASSWORD: 1
     networks:
       - internal

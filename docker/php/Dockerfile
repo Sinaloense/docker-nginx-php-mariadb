@@ -1,5 +1,5 @@
 FROM php:8.3.11-fpm-alpine
-ENV TZ="America/Mazatlan"
+ENV TZ="UTC"
 RUN apk add --no-cache tzdata \
     && cp /usr/share/zoneinfo/$TZ /etc/localtime \
     && docker-php-ext-install mysqli pdo pdo_mysql \
