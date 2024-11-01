@@ -1,3 +1,13 @@
-data/
-www/logs/
-www/html/pma/
+# MariaDB
+docker/mariadb/data/
+
+# WWW
+www/*
+
+!www/html/
+www/html/*
+!www/html/.gitignore
+
+!www/logs/
+www/logs/*
+!www/logs/.gitignore
