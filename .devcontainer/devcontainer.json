@@ -1,0 +1,22 @@
+{
+    "name": "Nginx PHP MariaDB",
+    "dockerComposeFile": "docker-compose.yml",
+    "service": "php",
+    "workspaceFolder": "/app",
+    "customizations": {
+      "vscode": {
+        "settings": {
+          "editor.codeActionsOnSave": {
+              "source.fixAll.eslint": "always"
+          }
+        },
+        "extensions": [
+          "codeium.codeium",
+          "usernamehw.errorlens",
+          "bmewburn.vscode-intelephense-client",
+          "amiralizadeh9480.laravel-extra-intellisense",
+          "xdebug.php-debug"
+        ]
+      }
+    }
+}
