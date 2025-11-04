@@ -19,9 +19,11 @@ services:
       TZ: UTC
     networks:
       - internal
+    working_dir: /app
     volumes:
       - ./php/99-docker-php.ini:/usr/local/etc/php/conf.d/99-docker-php.ini
       - ../www/html/:/var/www/html/
+      - ../:/app/
   mariadb:
     image: mariadb:12.0.2
     environment:
