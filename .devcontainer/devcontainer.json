@@ -8,6 +8,14 @@
         "settings": {
           "editor.codeActionsOnSave": {
               "source.fixAll.eslint": "always"
+          },
+          "emeraldwalk.runonsave": {
+              "commands": [
+                  {
+                      "match": "\\.php$",
+                      "cmd": "./vendor/bin/pint ${file}"
+                  }
+              ]
           }
         },
         "extensions": [
@@ -15,6 +23,7 @@
           "usernamehw.errorlens",
           "bmewburn.vscode-intelephense-client",
           "amiralizadeh9480.laravel-extra-intellisense",
+          "emeraldwalk.runonsave",
           "xdebug.php-debug"
         ]
       }

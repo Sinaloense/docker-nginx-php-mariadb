@@ -23,7 +23,7 @@ services:
       - ./php/99-docker-php.ini:/usr/local/etc/php/conf.d/99-docker-php.ini
       - ../www/html/:/var/www/html/
   mariadb:
-    image: mariadb:11.8.2
+    image: mariadb:12.0.2
     environment:
       TZ: UTC
       MARIADB_ALLOW_EMPTY_ROOT_PASSWORD: 1
